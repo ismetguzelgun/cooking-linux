@@ -37,3 +37,6 @@ conda activate test
 
 #out of all envs type below script for automatically started envs
 conda config --set auto_activate_base false
+
+#install pycharm
+sudo snap install pycharm-community --classic
