@@ -11,8 +11,8 @@ lsb_release -a
 sudo apt-get install tmux
 
 #choose default python version
-#python --version
-#ls /usr/bin/python*
+python --version
+ls /usr/bin/python*
 gedit ~/.zshrc
 alias python='/usr/bin/python3.7'
 . ~/.zshrc
