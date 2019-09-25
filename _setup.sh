@@ -38,5 +38,9 @@ conda activate test
 #out of all envs type below script for automatically started envs
 conda config --set auto_activate_base false
 
+#removing ppa
+sudo apt-add-repository -r ppa:ndicator-multiload/stable-daily
+sudo apt update -q
+
 #install pycharm
 sudo snap install pycharm-community --classic
