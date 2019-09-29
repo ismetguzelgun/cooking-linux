@@ -64,3 +64,7 @@ EOF
 
 source /etc/profile.d/jdk13.sh
 java -version
+
+#install kotlin via snap
+#https://kotlinlang.org/docs/tutorials/command-line.html
+
