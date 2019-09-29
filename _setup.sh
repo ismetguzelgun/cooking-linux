@@ -44,3 +44,23 @@ sudo apt update -q
 
 #install pycharm
 sudo snap install pycharm-community --classic
+
+#Download the package manually from Oracle Downloads page. Then install it using dpkg command.
+
+sudo dpkg -i jdk-13_linux-x64_bin.deb
+
+#For any dependency errors, resolve with the command:
+
+sudo apt -f install
+
+#Configure Java environment.
+
+cat <<EOF | sudo tee /etc/profile.d/jdk13.sh
+export JAVA_HOME=/usr/lib/jvm/jdk-13
+export PATH=\$PATH:\$JAVA_HOME/bin
+EOF
+
+#To check if you have Java installed on your machine, type the following command:
+
+source /etc/profile.d/jdk13.sh
+java -version
